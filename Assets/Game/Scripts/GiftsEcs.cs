@@ -18,10 +18,12 @@ public class GiftsEcs : MonoBehaviour
             //Add (new ...
             .Add(new InputSystem())
             .Add(new GiftTakeHandsSystem())
+            .Add(new CatsWishesSystem())
 
             //OneFrame<..
             .OneFrame<MouseInteractStartEvent>()
             .OneFrame<MouseInteractEndEvent>()
+            .OneFrame<WishlistUpdateEvent>()
 
             .Add(new ConsoleSystem())
             .OneFrame<CommandEvent>()

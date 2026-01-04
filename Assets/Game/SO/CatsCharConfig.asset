@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c943755c2c3f654c9563d49056eb8f1, type: 3}
+  m_Name: CatsCharConfig
+  m_EditorClassIdentifier: 
+  CatsCount: 6
+  CatsNames:
+  - "\u0413\u0435\u043D\u0430\u0434\u0438\u0439 "
+  - "\u0415\u043C\u0432\u0440\u043E\u0441\u0438\u0439"
+  - "\u041A\u043E\u0442\u0430\u0443\u0441"
+  - "\u041C\u0443\u0440\u0437\u0438\u043A"
+  - "\u0412\u0430\u0441\u044F"
+  - "\u041A\u043E\u0442\u0430\u043D\u0433\u0435\u043D\u0441"
+  - "\u041F\u0443\u0448\u0438\u0441\u0442\u0438\u043A"
+  - "\u041E\u0433\u0443\u0440\u0447\u0438\u043A"
+  - "\u0416\u043E\u0440\u0447\u0438\u043A"
+  - "\u0411\u043E\u0440\u0438\u0441"
+  - "\u0413\u0443\u043B\u044F\u0448"
+  - "\u041C\u0443\u0440\u0437\u0430\u0447"
+  - "\u041A\u043E\u0442\u0451\u043D\u043E\u043A \u0413\u0430\u0444"
+  - "\u041A\u043E\u0442\u0435\u0440 \u041C\u044F\u0443\u043A\u0435\u0440"
+  - "\u041A\u0443\u043A\u0438"
+  - "\u041F\u0443\u0448\u0438\u043D\u043A\u0430"
+  - "\u041A\u043E\u0442 \u0432 \u0441\u0430\u043F\u043E\u0433\u0435"
+  - "\u041B\u0435\u0445\u0430"
+  - "\u0412\u043B\u0430\u0434\u0438\u043A"
+  - "\u041A\u043B\u043E\u0434\u0438\u043A"
+  - "\u041F\u0443\u0448\u0438\u0441\u0442\u0430\u044F \u0436\u043E\u043F\u0430"
+  - "\u041F\u0443\u0448\u043D\u043E\u0439"
+  - "\u041F\u0443\u0448\u0438\u043B\u0438\u043D\u0434\u0440\u0438\u0439"
+  - "\u041A\u0440\u0438\u043F\u0442\u043E \u043A\u043E\u0442"
+  - "QR \u043A\u043E\u0442"
+  - "\u0424\u0435\u043B\u0438\u043A\u0441"
+  - "\u041A\u043E\u0442\u043E\u043C\u0430\u0440\u0430\u043D"
+  - "\u041A\u043E\u0442\u0435\u0440\u0438\u044F"
+  - "\u041A\u043E\u0442\u0444\u043B\u0438\u043A\u0441"
+  - "\u041A\u043E\u0442\u0444\u0435"
+  CatsSprites:
+  - {fileID: -3011721239711771209, guid: 69e72c2f2afe2c54a8324e9eb65d9ab1, type: 3}
+  - {fileID: -8320411274831675566, guid: 3da1c733eb290de4d9c7e01f4ccd125c, type: 3}
+  - {fileID: -6776873555370183516, guid: 7fb2aa4b2a4f3674182cc9f0e710f4f2, type: 3}
+  - {fileID: -5804766928745723617, guid: 2d5bce17ad24b28489570133237ec354, type: 3}
+  - {fileID: 5845933741232563696, guid: fb8c9fc94d99a1e4b9bda270d9f5cdd4, type: 3}
+  - {fileID: 6533014931203813138, guid: 63422f5ba2dec8343aefbd6a54d7659b, type: 3}
+  - {fileID: 701189073020504851, guid: 2e13d5f4206cd944c86737da8091bb82, type: 3}
+  GiftsSprites:
+  - {fileID: 3337864551678364372, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
+  - {fileID: -8360752814593010789, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
+  - {fileID: 1285895404912463058, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
+  - {fileID: 1823076548946008048, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
+  - {fileID: 5797896682047335860, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
+  - {fileID: -263668229847988831, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
+  - {fileID: -2652983084733684604, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
+  LettersSpites:
+  - CloseEnvelope: {fileID: -5949745247068580812, guid: 01145f4195111f749abdc953a691fa9d, type: 3}
+    OpenEnvelope: {fileID: 8008564958925055743, guid: 01145f4195111f749abdc953a691fa9d, type: 3}
+    Letter: {fileID: 7014038459940916361, guid: 01145f4195111f749abdc953a691fa9d, type: 3}
+  - CloseEnvelope: {fileID: -1486172666831003367, guid: 161b385752a884b4da76ca232b57d751, type: 3}
+    OpenEnvelope: {fileID: 4770077436677117102, guid: 161b385752a884b4da76ca232b57d751, type: 3}
+    Letter: {fileID: 5640078138975803200, guid: 161b385752a884b4da76ca232b57d751, type: 3}
+  - CloseEnvelope: {fileID: 9133198742153812500, guid: 848c76f9b0e7a64449077c2d130c31aa, type: 3}
+    OpenEnvelope: {fileID: 7000034493159205940, guid: 848c76f9b0e7a64449077c2d130c31aa, type: 3}
+    Letter: {fileID: -4338305075424818900, guid: 848c76f9b0e7a64449077c2d130c31aa, type: 3}
+  - CloseEnvelope: {fileID: 2651247908164142965, guid: fb03323b908fd364a9db5c7b7a5a9642, type: 3}
+    OpenEnvelope: {fileID: -8780727377109175464, guid: fb03323b908fd364a9db5c7b7a5a9642, type: 3}
+    Letter: {fileID: -9181644448233541594, guid: fb03323b908fd364a9db5c7b7a5a9642, type: 3}
+  - CloseEnvelope: {fileID: 5496238098574513369, guid: c8726f84fd689ac488b0dcdb0a2c6f6c, type: 3}
+    OpenEnvelope: {fileID: -1479402735117869730, guid: c8726f84fd689ac488b0dcdb0a2c6f6c, type: 3}
+    Letter: {fileID: -2600026707364016826, guid: c8726f84fd689ac488b0dcdb0a2c6f6c, type: 3}
+  - CloseEnvelope: {fileID: -4758342190786169765, guid: 49f18a3ebcc62cf43a666c6084c9dc56, type: 3}
+    OpenEnvelope: {fileID: -1726244823722659462, guid: 49f18a3ebcc62cf43a666c6084c9dc56, type: 3}
+    Letter: {fileID: 2118173469999262133, guid: 49f18a3ebcc62cf43a666c6084c9dc56, type: 3}
+  - CloseEnvelope: {fileID: 8378717384086528000, guid: 77f53507d0a68c54ea1a13b3afe4a585, type: 3}
+    OpenEnvelope: {fileID: 3303199823345730236, guid: 77f53507d0a68c54ea1a13b3afe4a585, type: 3}
+    Letter: {fileID: 527857901172419825, guid: 77f53507d0a68c54ea1a13b3afe4a585, type: 3}
+  - CloseEnvelope: {fileID: 8360170791870030065, guid: 7975115848be1e246ae0d3d82dcdca53, type: 3}
+    OpenEnvelope: {fileID: 8843400550646938953, guid: 7975115848be1e246ae0d3d82dcdca53, type: 3}
+    Letter: {fileID: 8706273632452923466, guid: 7975115848be1e246ae0d3d82dcdca53, type: 3}

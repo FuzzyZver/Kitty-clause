@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputConfig: {fileID: 11400000, guid: 78bfc888fe6b1954ea30a108f4588e18, type: 2}
   PlayerConfig: {fileID: 11400000, guid: 150f7233837e55842ba498a0519eae45, type: 2}
+  CatsCharConfig: {fileID: 11400000, guid: 61450702e39f54e44a8e2fdb1b15aff4, type: 2}
