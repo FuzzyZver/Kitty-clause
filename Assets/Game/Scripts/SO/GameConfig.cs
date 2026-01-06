@@ -6,4 +6,5 @@ public class GameConfig : ScriptableObject
     public InputConfig InputConfig;
     public PlayerConfig PlayerConfig;
     public CatsCharConfig CatsCharConfig;
+    public LevelConfig LevelConfig;
 }
