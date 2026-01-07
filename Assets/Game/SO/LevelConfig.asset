@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: LevelConfig
   m_EditorClassIdentifier: 
   LevelsCount: 6
-  ChunksCount: 10
+  ChunksCount: 4
   Chunks:
   - {fileID: 1196800444738502069, guid: 5fdd572ce53d15c4aad2bdcd3ba13553, type: 3}
   - {fileID: 5784336910126430130, guid: 429644c2a6330ae489693e27932766f7, type: 3}
+  SaveZone: {fileID: 8452610206809109648, guid: ee1af54c99b23344fb79b22b3669b389, type: 3}
+  SkyPrefab: {fileID: 7428327647348200067, guid: cc566aa00a1eb3f4bb60ece447998869, type: 3}
+  BackgroundPrefab: {fileID: 2995464764144886477, guid: 11a353bb85a81b74fb7bcb15b601f11f, type: 3}
+  MiddlegroundPrefab: {fileID: 2067509673097636494, guid: a653effaf924782408e3f0170e379692, type: 3}
+  ForegroundPrefab: {fileID: 4309549042243592713, guid: bc63d5fab63ba1d4f886f69e272a00ed, type: 3}
+  GroundPrefab: {fileID: 2803198973759384403, guid: 3ea2e9b35bd79144ca21e7eb00d699f0, type: 3}

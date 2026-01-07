@@ -24,6 +24,7 @@ public class EcsInclude : MonoBehaviour
             .Add(new GroundRaycastSystem())
             .Add(new GroundCheckSystem())
             .Add(new LevelGenerationSystem())
+            .Add(new BackgroundLoopSystem())
 
 
             //OneFrame<..
