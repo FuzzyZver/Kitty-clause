@@ -9,8 +9,8 @@ public class CatsCharConfig : ScriptableObject
     public List<string> CatsNames;
     public List<Sprite> CatsSprites;
     public List<Sprite> GiftsSprites;
-
     public List<LetterSprites> LettersSpites;
+    public List<GiftActor> GiftsPrefabs;
 }
 
 [System.Serializable]

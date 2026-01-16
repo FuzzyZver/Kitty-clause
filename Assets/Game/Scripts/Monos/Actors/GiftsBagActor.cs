@@ -14,8 +14,11 @@ public class GiftsBagActor: Actor
         GiftActor gift = other.gameObject.GetComponent<GiftActor>();
         if (gift != null)
         {
-            GetEntity().Get<GiftBagStorageComponent>().GiftsTypes.Add(gift.GetEntity().Get<GiftTypeComponent>().GiftType);
-            gift.GetEntity().Del<GiftFlag>();
+            GetWorld().NewEntity().Get<TakeOfGiftEvent>() = new TakeOfGiftEvent
+            {
+                Gift = gift,
+                GiftsBag = this
+            };
         }
     }
 }

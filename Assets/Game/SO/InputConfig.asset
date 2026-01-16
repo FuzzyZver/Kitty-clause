@@ -20,4 +20,5 @@ MonoBehaviour:
   MoveInputGravity: 300
   GroundDistanceThreshold: 1
   JumpDuration: 0
-  MagneticGiftForce: 10
+  MagneticGiftForce: 25
+  MaxGiftVelocity: 60

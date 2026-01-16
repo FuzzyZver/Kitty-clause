@@ -24,6 +24,7 @@ public class GiftsEcs : MonoBehaviour
             .OneFrame<MouseInteractStartEvent>()
             .OneFrame<MouseInteractEndEvent>()
             .OneFrame<WishlistUpdateEvent>()
+            .OneFrame<TakeOfGiftEvent>()
 
             .Add(new ConsoleSystem())
             .OneFrame<CommandEvent>()
@@ -40,10 +41,6 @@ public class GiftsEcs : MonoBehaviour
 
     public void Start()
     {
-        foreach (GiftActor gift in _sceneData.Gifts)
-        {
-            gift.Init(_world);
-        }
         _sceneData.GiftsBag.Init(_world);
     }
 

@@ -17,4 +17,5 @@ public class InputConfig : ScriptableObject
     public float GroundDistanceThreshold;
     public float JumpDuration;
     public float MagneticGiftForce;
+    public float MaxGiftVelocity;
 }
