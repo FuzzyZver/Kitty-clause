@@ -19,12 +19,14 @@ public class GiftsEcs : MonoBehaviour
             .Add(new InputSystem())
             .Add(new GiftTakeHandsSystem())
             .Add(new CatsWishesSystem())
+            .Add(new GiftsSpawnSystem())
 
             //OneFrame<..
             .OneFrame<MouseInteractStartEvent>()
             .OneFrame<MouseInteractEndEvent>()
             .OneFrame<WishlistUpdateEvent>()
             .OneFrame<TakeOfGiftEvent>()
+            .OneFrame<SpawnGiftEvent>()
 
             .Add(new ConsoleSystem())
             .OneFrame<CommandEvent>()
@@ -42,6 +44,7 @@ public class GiftsEcs : MonoBehaviour
     public void Start()
     {
         _sceneData.GiftsBag.Init(_world);
+        _sceneData.SpawnGiftsView.Init(_world);
     }
 
     public void Update()

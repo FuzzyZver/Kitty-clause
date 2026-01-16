@@ -85,3 +85,11 @@ MonoBehaviour:
   - CloseEnvelope: {fileID: 8360170791870030065, guid: 7975115848be1e246ae0d3d82dcdca53, type: 3}
     OpenEnvelope: {fileID: 8843400550646938953, guid: 7975115848be1e246ae0d3d82dcdca53, type: 3}
     Letter: {fileID: 8706273632452923466, guid: 7975115848be1e246ae0d3d82dcdca53, type: 3}
+  GiftsPrefabs:
+  - {fileID: 155407891538413434, guid: a4e3527c89e68f4469d4a62b43c08e8c, type: 3}
+  - {fileID: 155407891538413434, guid: 5dca4f65c99d4264e9e431b1b2f58afe, type: 3}
+  - {fileID: 155407891538413434, guid: 4a6527da7d72fb04bb2cf7af3e6316b5, type: 3}
+  - {fileID: 155407891538413434, guid: e3048de71d217b046a16e32acf8a0e4a, type: 3}
+  - {fileID: 155407891538413434, guid: f14615b9a4e5c064a8b408a691747ecb, type: 3}
+  - {fileID: 155407891538413434, guid: 4a1ee7e4134acbc4188b7cdd3a2a3398, type: 3}
+  - {fileID: 155407891538413434, guid: 7fdb3d4805a8e9747b5d002583aa6590, type: 3}
