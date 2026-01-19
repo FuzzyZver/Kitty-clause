@@ -4,4 +4,5 @@ public class UI : MonoBehaviour
 {
     public LettersView LettersView;
     public ConsoleView Console;
+    public StartLevelView StartLevelView;
 }

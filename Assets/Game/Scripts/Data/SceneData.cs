@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class SceneData : MonoBehaviour
 {
@@ -7,4 +8,6 @@ public class SceneData : MonoBehaviour
     public ChunkActor FirstChunk;
     public SpawnGiftsView SpawnGiftsView;
     public Transform GiftSpawnPoint;
+    public CinemachineCamera PlayerCamera;
+    public CinemachineCamera StartCamera;
 }

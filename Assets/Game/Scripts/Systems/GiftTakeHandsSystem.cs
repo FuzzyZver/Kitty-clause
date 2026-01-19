@@ -41,6 +41,7 @@ public class GiftTakeHandsSystem: Injects, IEcsInitSystem, IEcsRunSystem
 
             if (hit.collider != null)
             {
+                Debug.Log("awdwd");
                 GiftActor gift = hit.collider.GetComponent<GiftActor>();
                 if (gift != null && gift.GetEntity().Has<GiftFlag>())
                 {

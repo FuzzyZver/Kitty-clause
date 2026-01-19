@@ -25,6 +25,11 @@ public class EcsInclude : MonoBehaviour
             .Add(new GroundCheckSystem())
             .Add(new LevelGenerationSystem())
             .Add(new BackgroundLoopSystem())
+            .Add(new InputSystem())
+            .Add(new GiftTakeHandsSystem())
+            .Add(new CatsWishesSystem())
+            .Add(new GiftsSpawnSystem())
+            .Add(new CameraControlSystem())
 
 
             //OneFrame<..
@@ -34,6 +39,13 @@ public class EcsInclude : MonoBehaviour
             .OneFrame<MoveInputEvent>()
             .OneFrame<GroundEvent>()
             .OneFrame<GroundRaycastEvent>()
+            .OneFrame<MouseInteractStartEvent>()
+            .OneFrame<MouseInteractEndEvent>()
+            .OneFrame<WishlistUpdateEvent>()
+            .OneFrame<TakeOfGiftEvent>()
+            .OneFrame<SpawnGiftEvent>()
+            .OneFrame<CameraToPlayerEvent>()
+            .OneFrame<OnCollisionEvent>()
 
             .Add(new ConsoleSystem())
             .OneFrame<CommandEvent>()
