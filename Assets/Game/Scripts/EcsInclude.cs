@@ -30,6 +30,7 @@ public class EcsInclude : MonoBehaviour
             .Add(new CatsWishesSystem())
             .Add(new GiftsSpawnSystem())
             .Add(new CameraControlSystem())
+            .Add(new CollisionSystem())
 
 
             //OneFrame<..

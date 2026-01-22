@@ -31,17 +31,24 @@ public class GiftTakeHandsSystem: Injects, IEcsInitSystem, IEcsRunSystem
             gift.Del<GiftFlag>();
             TakeOffGift();
         }
+        foreach (int i in _mouseInteractEndEventFilter)
+        {
+            TakeOffGift();
+        }
 
         Vector2 mousePos = Mouse.current.position.ReadValue();
-        Vector2 worldPos = _camera.ScreenToWorldPoint(mousePos);
+        Ray ray = _camera.ScreenPointToRay(mousePos);
+        Plane plane = new Plane(Vector3.forward, Vector3.zero);
+        if (!plane.Raycast(ray, out float enter))
+            return;
+        Vector3 worldPos3 = ray.GetPoint(enter);
+        Vector2 worldPos = worldPos3;
 
         foreach (int i in _mouseInteractStartEventFilter)
         {
             RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
-
             if (hit.collider != null)
             {
-                Debug.Log("awdwd");
                 GiftActor gift = hit.collider.GetComponent<GiftActor>();
                 if (gift != null && gift.GetEntity().Has<GiftFlag>())
                 {
@@ -52,10 +59,6 @@ public class GiftTakeHandsSystem: Injects, IEcsInitSystem, IEcsRunSystem
                     _currentGiftRigitbody2D.angularVelocity = 0f;
                 }
             }
-        }
-        foreach(int i in _mouseInteractEndEventFilter)
-        {
-            TakeOffGift();
         }
 
         if(_currentGiftRigitbody2D != null)
