@@ -16,3 +16,4 @@ MonoBehaviour:
   PlayerConfig: {fileID: 11400000, guid: 150f7233837e55842ba498a0519eae45, type: 2}
   CatsCharConfig: {fileID: 11400000, guid: 61450702e39f54e44a8e2fdb1b15aff4, type: 2}
   LevelConfig: {fileID: 11400000, guid: 6c6d29bdaabafd24cad110161e83b4ae, type: 2}
+  CommonConfig: {fileID: 11400000, guid: 0ee9a7a7c4eb41b458d9ef7c6827d8b4, type: 2}

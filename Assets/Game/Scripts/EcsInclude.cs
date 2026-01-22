@@ -7,6 +7,11 @@ public class EcsInclude : MonoBehaviour
     [SerializeField] private UI _ui;
     [SerializeField] private GameConfig _gameConfig;
     [SerializeField] private SceneData _sceneData;
+    private RealtimeData _realtimeData = new RealtimeData()
+    {
+        StartLevelTime = 0.0f,
+        Timer = 0.0f
+    };
     private EcsWorld _world;
     private EcsSystems _systems;
 
@@ -31,6 +36,7 @@ public class EcsInclude : MonoBehaviour
             .Add(new GiftsSpawnSystem())
             .Add(new CameraControlSystem())
             .Add(new CollisionSystem())
+            .Add(new TimerSystem())
 
 
             //OneFrame<..
@@ -57,6 +63,8 @@ public class EcsInclude : MonoBehaviour
             .Inject(_gameConfig)
             .Inject(_ui)
             .Inject(_sceneData)
+            .Inject(_realtimeData)
+
 
             .Init();
     }

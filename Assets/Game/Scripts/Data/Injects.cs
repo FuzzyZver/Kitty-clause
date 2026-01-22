@@ -7,4 +7,5 @@ public class Injects
     public GameConfig GameConfig;
     public SceneData SceneData;
     public UI UI;
+    public RealtimeData RealtimeData;
 }
