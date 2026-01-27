@@ -8,6 +8,7 @@ public class ChunkActor: Actor
     [SerializeField] private Transform _startSP;
     [SerializeField] private Transform _endSP;
     [SerializeField] private List<ObstacleActor> _obstaclesActors;
+    [SerializeField] private CatActor _catActor;
     public override void ExpandEntity(EcsEntity entity)
     {
         entity.Get<TransformRef>().Transform = _transform;
@@ -16,9 +17,16 @@ public class ChunkActor: Actor
             StartSP = _startSP,
             EndSP = _endSP
         };
+
+        if (_catActor)
+        {
+            _catActor.Init(GetWorld());
+        }
         foreach (ObstacleActor obstacle in _obstaclesActors)
         {
             obstacle.Init(GetWorld());
         }
     }
+
+    public CatActor GetCat() => _catActor;
 }

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: CommonConfig
   m_EditorClassIdentifier: 
   ObstacleDeletedTime: 10
+  GiveGiftView: {fileID: 548426018918707333, guid: d2c7a51fb5784454a8ae7c5b8d067bd6, type: 3}

@@ -4,4 +4,6 @@ using UnityEngine;
 public class CommonConfig : ScriptableObject
 {
     public float ObstacleDeletedTime;
+    [Header("UI Views")] 
+    public GiveGiftView GiveGiftView;
 }

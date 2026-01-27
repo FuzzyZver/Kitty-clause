@@ -27,12 +27,14 @@ public class CatsWishesSystem: Injects, IEcsInitSystem, IEcsRunSystem
                CatName = catsNames[catNameId],
                GiftTipe = giftType,
                CatSprite = catsSprites[catSpriteId],
-               GiftSprite = giftsSprites[giftType]
+               GiftSprite = giftsSprites[giftType],
+               Mood = 0
             };
             catsNames.RemoveAt(catNameId);
             catsSprites.RemoveAt(catSpriteId);
         }
         UI.LettersView.Init(EcsWorld, _cats);
+        RealtimeData.Cats = _cats;
     }
 
     public void Run()

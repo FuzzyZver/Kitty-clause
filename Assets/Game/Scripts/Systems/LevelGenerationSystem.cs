@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class LevelGenerationSystem: Injects, IEcsInitSystem, IEcsRunSystem
 {
-    public PlayerActor _player;
+    private PlayerActor _player;
     private List<ChunkActor> _chunks = new List<ChunkActor>();
     private ChunkActor _saveZone;
     private int _levelsCount;
@@ -47,6 +47,16 @@ public class LevelGenerationSystem: Injects, IEcsInitSystem, IEcsRunSystem
 
             _spawnedSaveZone = saveZoneChunk;
             _spawnedChunks.Add(_spawnedSaveZone);
+
+            List<EcsEntity> cats = RealtimeData.Cats;
+            for (int j= 0; j < cats.Count; j++)
+            {
+                if (cats[j].Get<CatCharComponent>().Mood == 0)
+                {
+                    CatActor currentCat = _spawnedSaveZone.GetCat();
+                    currentCat.SetCat(j, cats[j].Get<CatCharComponent>().CatSprite);
+                }
+            }
         }
         else
         {

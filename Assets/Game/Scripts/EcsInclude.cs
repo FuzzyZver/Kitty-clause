@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Leopotam.Ecs;
 
@@ -9,6 +10,7 @@ public class EcsInclude : MonoBehaviour
     [SerializeField] private SceneData _sceneData;
     private RealtimeData _realtimeData = new RealtimeData()
     {
+        Cats = new List<EcsEntity>(),
         StartLevelTime = 0.0f,
         Timer = 0.0f
     };
@@ -37,6 +39,7 @@ public class EcsInclude : MonoBehaviour
             .Add(new CameraControlSystem())
             .Add(new CollisionSystem())
             .Add(new TimerSystem())
+            .Add(new GiveGiftsSystem())
 
 
             //OneFrame<..
@@ -53,6 +56,8 @@ public class EcsInclude : MonoBehaviour
             .OneFrame<SpawnGiftEvent>()
             .OneFrame<CameraToPlayerEvent>()
             .OneFrame<OnCollisionEvent>()
+            .OneFrame<GiveGiftEvent>()
+            .OneFrame<CatInteractEvent>()
 
             .Add(new ConsoleSystem())
             .OneFrame<CommandEvent>()

@@ -2,7 +2,7 @@
 - Project name: Kitty-clause
 - Unity version: Unity 6000.0.46f1
 - Active game object:
-  - Name: StartLevel
+  - Name: GameManager
   - Tag: Untagged
-  - Layer: UI
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
