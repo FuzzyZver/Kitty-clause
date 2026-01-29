@@ -84,6 +84,7 @@ public class InputSystem : Injects, IEcsInitSystem, IEcsRunSystem
 
     public void Run()
     {
+        if(RealtimeData.IsGameEnd) return;
         var moveInputValue = _moveInputAction.ReadValue<Vector2>();
         EcsWorld.NewEntity().Get<MoveInputEvent>().Vector2 = moveInputValue;
 

@@ -23,13 +23,25 @@ public class GiftTakeHandsSystem: Injects, IEcsInitSystem, IEcsRunSystem
 
     public void Run()
     {
-        foreach(int i in _takeOffGiftEventFilter)
+
+        if (!UI.StartLevelView.gameObject.activeSelf)
+        {
+            if (RealtimeData.GiftBag.Get<GiftBagStorageComponent>().GiftsTypes.Count >= 6)
+            {
+                UI.StartLevelView.gameObject.SetActive(true);
+                UI.StartLevelView.Init(EcsWorld);
+            }
+        }
+
+        foreach (int i in _takeOffGiftEventFilter)
         {
             var giftsBag = _takeOffGiftEventFilter.Get1(i).GiftsBag.GetEntity();
-            var gift = _takeOffGiftEventFilter.Get1(i).Gift.GetEntity();
-            giftsBag.Get<GiftBagStorageComponent>().GiftsTypes.Add(gift.Get<GiftTypeComponent>().GiftType);
-            gift.Del<GiftFlag>();
-            TakeOffGift();
+            if (giftsBag.Get<GiftBagStorageComponent>().GiftsTypes.Count < 6)
+            {
+                var gift = _takeOffGiftEventFilter.Get1(i).Gift.GetEntity();
+                giftsBag.Get<GiftBagStorageComponent>().GiftsTypes.Add(gift.Get<GiftTypeComponent>().GiftType);
+                TakeOffGift();
+            }
         }
         foreach (int i in _mouseInteractEndEventFilter)
         {

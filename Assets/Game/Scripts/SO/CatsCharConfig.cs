@@ -11,6 +11,9 @@ public class CatsCharConfig : ScriptableObject
     public List<Sprite> GiftsSprites;
     public List<LetterSprites> LettersSpites;
     public List<GiftActor> GiftsPrefabs;
+
+
+    public List<GameObject> MoodsSprites;
 }
 
 [System.Serializable]

@@ -20,6 +20,8 @@ MonoBehaviour:
   - {fileID: 5784336910126430130, guid: 6372e96038769bb4a93db7f11d65bc6a, type: 3}
   - {fileID: 5784336910126430130, guid: b0f3aa02a83495a4a8e750164d7ce696, type: 3}
   SaveZone: {fileID: 8452610206809109648, guid: ee1af54c99b23344fb79b22b3669b389, type: 3}
+  LastChunk: {fileID: 1196800444738502069, guid: 5fdd572ce53d15c4aad2bdcd3ba13553, type: 3}
+  CatActor: {fileID: 0}
   SkyPrefab: {fileID: 7428327647348200067, guid: cc566aa00a1eb3f4bb60ece447998869, type: 3}
   BackgroundPrefab: {fileID: 2995464764144886477, guid: 11a353bb85a81b74fb7bcb15b601f11f, type: 3}
   MiddlegroundPrefab: {fileID: 2067509673097636494, guid: a653effaf924782408e3f0170e379692, type: 3}

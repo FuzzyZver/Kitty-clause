@@ -15,7 +15,7 @@ public class TimerSystem: Injects, IEcsRunSystem
             RealtimeData.StartLevelTime = Time.time;
             isLevelStarted = true;
         }
-        if (isLevelStarted)
+        if (isLevelStarted && !RealtimeData.IsGameEnd)
         {
             _localTimer = Time.time - RealtimeData.StartLevelTime;
             RealtimeData.Timer = _localTimer;

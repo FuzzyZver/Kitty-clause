@@ -12,7 +12,8 @@ public class EcsInclude : MonoBehaviour
     {
         Cats = new List<EcsEntity>(),
         StartLevelTime = 0.0f,
-        Timer = 0.0f
+        Timer = 0.0f,
+        IsGameEnd = false
     };
     private EcsWorld _world;
     private EcsSystems _systems;
@@ -30,7 +31,6 @@ public class EcsInclude : MonoBehaviour
             .Add(new JumpSystem())
             .Add(new GroundRaycastSystem())
             .Add(new GroundCheckSystem())
-            .Add(new LevelGenerationSystem())
             .Add(new BackgroundLoopSystem())
             .Add(new InputSystem())
             .Add(new GiftTakeHandsSystem())
@@ -40,6 +40,9 @@ public class EcsInclude : MonoBehaviour
             .Add(new CollisionSystem())
             .Add(new TimerSystem())
             .Add(new GiveGiftsSystem())
+            .Add(new EndGameSystem())
+            .OneFrame<EndGameEvent>()
+            .Add(new LevelGenerationSystem())
 
 
             //OneFrame<..
@@ -58,6 +61,7 @@ public class EcsInclude : MonoBehaviour
             .OneFrame<OnCollisionEvent>()
             .OneFrame<GiveGiftEvent>()
             .OneFrame<CatInteractEvent>()
+            .OneFrame<SpawnLastChunkEvent>()
 
             .Add(new ConsoleSystem())
             .OneFrame<CommandEvent>()

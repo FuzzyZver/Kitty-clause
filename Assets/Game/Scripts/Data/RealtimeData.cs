@@ -8,4 +8,5 @@ public class RealtimeData
     public EcsEntity GiftBag;
     public float StartLevelTime;
     public float Timer;
+    public bool IsGameEnd;
 }

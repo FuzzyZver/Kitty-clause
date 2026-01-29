@@ -12,13 +12,16 @@ public class GiftsBagActor: Actor
     public void OnTriggerEnter2D(Collider2D other)
     {
         GiftActor gift = other.gameObject.GetComponent<GiftActor>();
-        if (gift != null)
+        if (gift == null) return;
+
+        var entity = gift.GetEntity();
+        if (!entity.Has<GiftFlag>()) return;
+        entity.Del<GiftFlag>();
+
+        GetWorld().NewEntity().Get<TakeOfGiftEvent>() = new TakeOfGiftEvent
         {
-            GetWorld().NewEntity().Get<TakeOfGiftEvent>() = new TakeOfGiftEvent
-            {
-                Gift = gift,
-                GiftsBag = this
-            };
-        }
+            Gift = gift,
+            GiftsBag = this
+        };
     }
 }

@@ -45,13 +45,13 @@ MonoBehaviour:
   - "\u041A\u043E\u0442\u0444\u043B\u0438\u043A\u0441"
   - "\u041A\u043E\u0442\u0444\u0435"
   CatsSprites:
-  - {fileID: -3011721239711771209, guid: 69e72c2f2afe2c54a8324e9eb65d9ab1, type: 3}
-  - {fileID: -8320411274831675566, guid: 3da1c733eb290de4d9c7e01f4ccd125c, type: 3}
-  - {fileID: -6776873555370183516, guid: 7fb2aa4b2a4f3674182cc9f0e710f4f2, type: 3}
-  - {fileID: -5804766928745723617, guid: 2d5bce17ad24b28489570133237ec354, type: 3}
-  - {fileID: 5845933741232563696, guid: fb8c9fc94d99a1e4b9bda270d9f5cdd4, type: 3}
-  - {fileID: 6533014931203813138, guid: 63422f5ba2dec8343aefbd6a54d7659b, type: 3}
-  - {fileID: 701189073020504851, guid: 2e13d5f4206cd944c86737da8091bb82, type: 3}
+  - {fileID: 21300000, guid: 69e72c2f2afe2c54a8324e9eb65d9ab1, type: 3}
+  - {fileID: 21300000, guid: 3da1c733eb290de4d9c7e01f4ccd125c, type: 3}
+  - {fileID: 21300000, guid: 7fb2aa4b2a4f3674182cc9f0e710f4f2, type: 3}
+  - {fileID: 21300000, guid: 2d5bce17ad24b28489570133237ec354, type: 3}
+  - {fileID: 21300000, guid: fb8c9fc94d99a1e4b9bda270d9f5cdd4, type: 3}
+  - {fileID: 21300000, guid: 63422f5ba2dec8343aefbd6a54d7659b, type: 3}
+  - {fileID: 21300000, guid: 2e13d5f4206cd944c86737da8091bb82, type: 3}
   GiftsSprites:
   - {fileID: 3337864551678364372, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
   - {fileID: -8360752814593010789, guid: 0ddb80f8943d3c64b9585994ad65d8e7, type: 3}
@@ -93,3 +93,7 @@ MonoBehaviour:
   - {fileID: 155407891538413434, guid: f14615b9a4e5c064a8b408a691747ecb, type: 3}
   - {fileID: 155407891538413434, guid: 4a1ee7e4134acbc4188b7cdd3a2a3398, type: 3}
   - {fileID: 155407891538413434, guid: 7fdb3d4805a8e9747b5d002583aa6590, type: 3}
+  MoodsSprites:
+  - {fileID: 0}
+  - {fileID: 267063233179289866, guid: 108d1fe522b94784199c7cfbeb20d948, type: 3}
+  - {fileID: 4219161681765078850, guid: 2032f26f6793e824d8931789eb61253d, type: 3}

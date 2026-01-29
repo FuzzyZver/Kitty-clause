@@ -9,6 +9,7 @@ public class LevelConfig : ScriptableObject
 
     public List<ChunkActor> Chunks;
     public ChunkActor SaveZone;
+    public ChunkActor LastChunk;
     public CatActor CatActor;
     [Space]
     public GameObject SkyPrefab;
