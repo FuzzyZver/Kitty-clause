@@ -18,4 +18,7 @@ public class InputConfig : ScriptableObject
     public float JumpDuration;
     public float MagneticGiftForce;
     public float MaxGiftVelocity;
+    public float DefaultFov;
+    public float RunFov;
+    public float CameraSmooth;
 }

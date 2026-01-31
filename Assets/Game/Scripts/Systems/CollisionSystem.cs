@@ -16,6 +16,7 @@ public class CollisionSystem: Injects, IEcsInitSystem, IEcsRunSystem
         foreach (int i in _onCollisionEventFilter)
         {
             RealtimeData.StartLevelTime -= _obstacleDeletedTime;
+            RealtimeData.ObstacleHits++;
         }
     }
 }

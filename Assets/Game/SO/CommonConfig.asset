@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstacleDeletedTime: 10
   GiveGiftView: {fileID: 548426018918707333, guid: d2c7a51fb5784454a8ae7c5b8d067bd6, type: 3}
+  EndGameScreen: {fileID: 4318041426022934056, guid: 247aaa46b2289484eaf2d6eb7ed6e563, type: 3}

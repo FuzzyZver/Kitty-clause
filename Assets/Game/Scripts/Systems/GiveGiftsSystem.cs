@@ -53,7 +53,7 @@ public class GiveGiftsSystem : Injects, IEcsInitSystem, IEcsRunSystem
             var cat = RealtimeData.Cats[catEntity.Get<CatTypeComponent>().CatType];
             cat.Get<CatCharComponent>().Mood =
                 cat.Get<CatCharComponent>().GiftTipe == giftType ? 1 : 2;
-            Debug.Log(cat.Get<CatCharComponent>().Mood);
+            if (cat.Get<CatCharComponent>().Mood == 1) RealtimeData.SuccessCats++;
             var gifts = RealtimeData.GiftBag.Get<GiftBagStorageComponent>().GiftsTypes;
 
             for (int j = 0; j < gifts.Count; j++)

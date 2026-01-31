@@ -8,4 +8,5 @@ public class GameConfig : ScriptableObject
     public CatsCharConfig CatsCharConfig;
     public LevelConfig LevelConfig;
     public CommonConfig CommonConfig;
+    public DataConfig DataConfig;
 }

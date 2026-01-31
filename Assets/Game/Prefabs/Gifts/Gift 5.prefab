@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db25579c38d1d24abe368e1564e480c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _giftType: 4
+  _giftType: 5
   _transform: {fileID: 5925260491294393806}
   _rigidbody: {fileID: 2706653348222774187}
 --- !u!61 &3463914813167244401

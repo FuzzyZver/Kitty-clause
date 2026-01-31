@@ -22,3 +22,6 @@ MonoBehaviour:
   JumpDuration: 0
   MagneticGiftForce: 25
   MaxGiftVelocity: 60
+  DefaultFov: 60
+  RunFov: 80
+  CameraSmooth: 2

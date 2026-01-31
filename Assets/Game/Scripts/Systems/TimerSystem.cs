@@ -18,8 +18,8 @@ public class TimerSystem: Injects, IEcsRunSystem
         if (isLevelStarted && !RealtimeData.IsGameEnd)
         {
             _localTimer = Time.time - RealtimeData.StartLevelTime;
-            RealtimeData.Timer = _localTimer;
             TimeSpan t = TimeSpan.FromSeconds(_localTimer);
+            RealtimeData.Timer = t;
             UI.TimerText.text = $"{t.Minutes:00}:{t.Seconds:00}:{t.Milliseconds:000}";
         }
     }
