@@ -42,7 +42,7 @@ public class EcsInclude : MonoBehaviour
             .Add(new EndGameSystem())
             .OneFrame<EndGameEvent>()
             .Add(new LevelGenerationSystem())
-            .Add(new AnimationSystem())
+            .Add(new PlayerAniimationSystem())
 
 
             //OneFrame<..

@@ -12,10 +12,13 @@ public class MenuUI : MonoBehaviour
     [Header("Races")] 
     [SerializeField] private RectTransform _racesSpawnPlace;
     [SerializeField] private List<RaceView> _raceViews = new List<RaceView>();
+    private int _showRaces = 2;
 
     private void Awake()
     {
-        for (int i = 0; i < _dataConfig.Races.Count; i++)
+        int startIndex = Mathf.Max(0, _dataConfig.Races.Count - _showRaces);
+
+        for (int i = _dataConfig.Races.Count - 1; i >= startIndex; i--)
         {
             RaceView race = Instantiate(_dataConfig.RaceView, _racesSpawnPlace);
             race.Init(_dataConfig.Races[i]);

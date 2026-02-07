@@ -7,11 +7,19 @@ public class CatActor: Actor
 {
     [SerializeField] private Transform _catViewTransform;
     [SerializeField] private SpriteRenderer _catSprite;
+    [SerializeField] private GameObject _leftDoor;
+    [SerializeField] private GameObject _rightDoor;
+    [SerializeField] private Animator _animator;
     public override void ExpandEntity(EcsEntity entity)
     {
         entity.Get<TransformRef>().Transform = _catViewTransform;
     }
 
+    public void OpenDoor()
+    {
+        _leftDoor.SetActive(true);
+        _rightDoor.SetActive(false);
+    }
     public void SetCat(int catType, Sprite catSprite)
     {
         GetEntity().Get<CatTypeComponent>().CatType = catType;
@@ -24,6 +32,7 @@ public class CatActor: Actor
         if (player)
         {
             GetWorld().NewEntity().Get<CatInteractEvent>().CatActor = this;
+            _animator.SetBool("IsPlayerHere", true);
         }
     }
 
@@ -33,6 +42,7 @@ public class CatActor: Actor
         if (player)
         {
             GetWorld().NewEntity().Get<CatInteractEvent>().CatActor = this;
+            _animator.SetBool("IsPlayerHere", false);
         }
     }
 }

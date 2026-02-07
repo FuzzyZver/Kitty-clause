@@ -23,5 +23,5 @@ MonoBehaviour:
   MagneticGiftForce: 25
   MaxGiftVelocity: 60
   DefaultFov: 60
-  RunFov: 80
+  RunFov: 75
   CameraSmooth: 2

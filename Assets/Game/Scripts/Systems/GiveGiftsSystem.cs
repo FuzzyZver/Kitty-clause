@@ -64,6 +64,7 @@ public class GiveGiftsSystem : Injects, IEcsInitSystem, IEcsRunSystem
                     break;
                 }
             }
+            _currentCat.OpenDoor();
 
             ClearGifts();
             SpawnMood(catEntity);

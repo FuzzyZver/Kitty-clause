@@ -19,6 +19,12 @@ MonoBehaviour:
   - SuccessCats: 2
     CollisionsFailed: 2
     TotalScore: 2
+  - SuccessCats: 2
+    CollisionsFailed: 2
+    TotalScore: 2
+  - SuccessCats: 2
+    CollisionsFailed: 2
+    TotalScore: 2
   RaceView: {fileID: 2709311184973912367, guid: d9b1f6afd1bbb894ea88f880d8947a1c, type: 3}
-  MuzikVolume: 0.5
-  SoundVolume: 0.5
+  MuzikVolume: 0.25677153
+  SoundVolume: 0.46422538
